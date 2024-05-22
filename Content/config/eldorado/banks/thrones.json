@@ -1,0 +1,124 @@
+{
+	"core:creatureBank" :
+ 
+	{
+
+		"types" :
+ 
+		{
+
+			"thrones" :
+ 
+			{
+
+				"name" : "Gold Thrones",
+
+				"templates" :
+
+				{
+
+					"thrones" :
+
+					{
+
+						"animation" : "eldorado/bank/thrones/thrones.def",
+
+						"visitableFrom" : [ "---", "-+-", "+++" ],
+ 
+						"mask" : [ "VVVVV", "VVVVV", "VBBBB", "VBBAB" ],
+						"allowedTerrains":["grass","dirt","swamp","sand","rough"
+,"snow","subterra","lava","rock"]
+ 
+					}
+				},
+
+				"rmg" : {
+
+					"value"		: 2500,
+
+					"rarity"	: 100
+				},
+				"levels": [
+					{
+						"chance": 30,
+						"guards": [
+							{ "amount": 5, "type": "ffcerberygold" },
+							{ "amount": 5, "type": "ffhelena2" },
+							{ "amount": 5, "type": "ffmichelle" },
+							{ "amount": 5, "type": "ffnixwarriorgold" },
+							{ "amount": 5, "type": "ffgoldsatanist" }
+						],
+						"combat_value": 50,
+						"reward" : {
+							"value": 2000,
+							"resources":
+							{
+								"gold" : 2000
+							}
+						}
+					},
+					{
+						"chance": 30,
+						"guards": [
+							{ "amount": 10, "type": "ffcerberygold" },
+							{ "amount": 10, "type": "ffhelena2" },
+							{ "amount": 10, "type": "ffmichelle" },
+							{ "amount": 10, "type": "ffnixwarriorgold" },
+							{ "amount": 10, "type": "ffgoldsatanist" }
+						],
+						"combat_value": 100,
+						"reward" : {
+							"value": 3000,
+							"resources":
+							{
+								"gold" : 3000
+							}
+						}
+					},
+					{
+						"chance": 30,
+						"guards": [
+							{ "amount": 15, "type": "ffcerberygold" },
+							{ "amount": 15, "type": "ffhelena2" },
+							{ "amount": 15, "type": "ffmichelle" },
+							{ "amount": 15, "type": "ffnixwarriorgold" },
+							{ "amount": 15, "type": "ffgoldsatanist" }
+						],
+						"combat_value": 150,
+						"reward" : {
+							"value": 5000,
+							"resources":
+							{
+								"gold" : 4000
+							},
+							"artifacts": [ { "class" : "TREASURE" } ]
+						}
+					},
+					{
+						"chance": 10,
+						"guards": [
+							{ "amount": 20, "type": "ffcerberygold" },
+							{ "amount": 20, "type": "ffhelena2" },
+							{ "amount": 20, "type": "ffmichelle" },
+							{ "amount": 20, "type": "ffnixwarriorgold" },
+							{ "amount": 20, "type": "ffgoldsatanist" }
+						],
+						"combat_value": 200,
+						"reward" : {
+							"value": 7000,
+							"resources":
+							{
+								"gold" : 5000
+							},
+							"artifacts": [ { "class" : "MINOR" } ]
+						}
+					}
+				]
+
+			}
+
+		}
+
+	}
+
+}

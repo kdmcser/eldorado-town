@@ -1,0 +1,243 @@
+{
+	"fffaeriegolddragon":
+	{
+		"name" :
+		{
+			"plural" : "Faerie Gold Dragons",
+			"singular" : "Faerie Gold Dragon"
+		},
+		"advMapAmount" :
+		{
+			"max" : 10,
+			"min" : 6
+		},
+		"faction" : "eldorado",
+		"level" : 10,
+		"attack" : 140,
+		"defense" : 140,
+		"damage" :
+		{
+			 "min" : 125,
+			 "max" : 155
+		},
+		"growth" : 1,
+		"hitPoints" : 2500,
+		"speed" : 12,
+		"fightValue" : 12000,
+		"aiValue" : 12300,
+		"cost" :
+		{
+			"gold" : 12000,
+			"wood" : 10,
+			"mercury" : 10,
+			"ore" : 10,
+			"sulfur" : 10,
+			"crystal" : 10,
+			"gems" : 10
+		},
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/faeriegolddragon.def",
+			"map" : "eldorado/creatures/map/faeriegolddragon.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/faeriegolddragon.bmp",
+			"iconLarge" : "eldorado/creatures/iconsBig/faeriegolddragon.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},	
+		"sound" :
+		{
+			"attack": "FAERATTK.wav",
+			"defend": "FAERDFND.wav",
+			"killed": "FAERKILL.wav",
+			"move": "FAERMOVE.wav",
+			"shoot": "FAERSHOT.wav",
+			"wince": "FAERWNCE.wav"
+		},
+		"abilities":
+		{
+			"teleports" :
+			{
+
+		        "type" : "FLYING",
+		        "subtype" : "movementTeleporting"
+			},
+			"immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+			"regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 100000
+			},
+            "deathCloud" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.deathCloud"
+			},
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"mirror" :
+			{
+				"type" : "MAGIC_MIRROR",
+				"val" : 20
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 5
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 800
+			},
+			"castsMagicArrow" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.magicArrow",
+				"addInfo" : 22,
+				"val" : 3
+			},
+			"castsIceBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.iceBolt",
+				"addInfo" : 22,
+				"val" : 3
+			},
+			"castsLightningBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.lightningBolt",
+				"addInfo" : 22,
+				"val" : 3
+			},
+			"castsChainLightning" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.chainLightning",
+				"addInfo" : 5,
+				"val" : 3
+			},
+			"castsFrostRing" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.frostRing",
+				"addInfo" : 10,
+				"val" : 3
+			},
+			"castsFireball" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireball",
+				"addInfo" : 21,
+				"val" : 3
+			},
+			"castsInferno" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.inferno",
+				"addInfo" : 5,
+				"val" : 3
+			},
+			"castsMeteorShower" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.meteorShower",
+				"addInfo" : 5,
+				"val" : 3
+			},
+		    "twohexattackbreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 2, 2, 2, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY", 
+					"subtype" : "spell.dispelHelpful", 
+				},
+				"values" : [0, 0, 0, 0, 1, 1, 1, 1, 1, 1]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.dispelHelpful", 
+					"addInfo" : 100
+				},
+				"values" : [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]			
+			}
+		]	
+	}
+}

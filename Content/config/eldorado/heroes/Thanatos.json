@@ -1,0 +1,51 @@
+{
+	"gmThanatos" :
+	{
+		"class" : "goldmen",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/thanatos/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/thanatos/spec-large.bmp",
+			"large" : "eldorado/heroes/thanatos/portrait-large.bmp",
+			"small" : "eldorado/heroes/thanatos/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "earthMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Thanatos",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "{Infernal Satanists}\r\n\r\nIncreases Speed of any Infernal Satanists by 1 and their Attack and Defense skills by 5% for every 6 levels (rounded up)",
+				"tooltip" : "Creature Bonus: Infernal Satanists",
+				"name" : "Infernal Satanists"
+			}
+		},
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"specialty" : {
+			"creature" : "ffinfernalsatanist"
+		}		
+	}
+}

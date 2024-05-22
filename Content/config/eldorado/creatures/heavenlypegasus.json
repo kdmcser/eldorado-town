@@ -1,0 +1,142 @@
+{
+	"ffheavenlypegasus":
+	{
+		"name" :
+		{
+			"plural" : "Teal Pegasi",
+			"singular" : "Teal Pegasus"
+		},
+		"advMapAmount" :
+		{
+
+			"max" : 15,
+			"min" : 10
+		},
+		"faction" : "eldorado",
+		"upgrades" :
+		[
+			"yellowpegasus"
+		]
+,
+		"aiValue" : 125,
+		"attack" : 5,
+		"cost" :
+		{
+			"gold" : 175
+		},
+		"damage" :
+		{
+			"max" : 4,
+			"min" : 2
+		},
+		"defense" : 5,
+		"fightValue" : 135,
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/heavenlypegasus.def",
+			"map" : "eldorado/creatures/map/heavenlypegasus.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/heavenlypegasus.bmp",
+			"iconLarge" : "eldorado/creatures/iconsBig/heavenlypegasus.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.20,
+				"idle" : 10.00,
+				"attack" : 1
+			}
+		},
+		"growth" : 8,
+		"hitPoints" : 15,
+		"level" : 2,
+		"doubleWide" : true,
+		"sound" :
+		{
+			"attack": "APEGATTK.wav",
+			"defend": "APEGDFND.wav",
+			"killed": "APEGKILL.wav",
+			"move": "APEGMOVE.wav",
+			"wince": "APEGWNCE.wav"
+		},
+		"speed" : 10,
+		"abilities":
+		{
+			"increaseManaCost" :
+			{
+				"type" : "CHANGES_SPELL_COST_FOR_ENEMY",
+				"val" : 2
+			},
+			"flying" : 
+			{
+				"type" : "FLYING"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 2, 3, 3, 3, 4 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 1, 2, 2, 2, 3, 3, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 2, 2, 3, 3, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.fortune"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.curse",
+					"addInfo" : [ 1, 2 ]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]
+	}
+}
+

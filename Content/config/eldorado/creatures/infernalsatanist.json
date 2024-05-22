@@ -1,0 +1,141 @@
+{
+	"ffinfernalsatanist":
+	{
+		"name" :
+		{
+			"plural" : "Infernal Satanists",
+			"singular" : "Infernal Satanist"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 6
+		},
+		"faction" : "eldorado",
+		"upgrades":
+		[
+			"ffgoldsatanist"
+		],
+		"level" : 6,
+		"attack" : 16,
+		"defense" : 16,
+		"damage" :
+		{
+			 "min" : 15,
+			 "max" : 20
+		},
+		"growth" : 2,
+		"hitPoints" : 120,
+		"speed" : 12,
+		"fightValue" : 1650,
+		"aiValue" : 1950,
+		"cost" :
+		{
+			"gold" : 1200
+		},
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/satanistred.def",
+			"map" : "eldorado/creatures/map/satanistred.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/satanistred.png",
+			"iconLarge" : "eldorado/creatures/iconsBig/satanistred.png",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "AAGLATTK.wav",
+			"defend": "AAGLDFND.wav",
+			"killed": "AAGLKILL.wav",
+			"move": "AAGLMOVE.wav",
+			"wince": "AAGLWNCE.wav"
+		},
+		"abilities" :
+		{
+		        "flying" :
+			{
+				"type" : "FLYING"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_RETALIATION"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED", 
+					"subtype" : "spell.slayer"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 2, 3, 3 ]
+			}
+		]
+	}
+}
+
+
+

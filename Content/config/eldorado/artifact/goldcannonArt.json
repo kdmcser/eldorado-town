@@ -1,0 +1,21 @@
+{
+	"goldcannon":
+	{
+		"type" : ["HERO"],
+		"warMachine" : "goldcannon",
+		"class" : "SPECIAL",
+		"slot" : "MACH1",
+		"value": 5000,		
+		"text":
+		{
+			"name": "Gold Cannon",
+			"description": "{GoldCannon}\r\n\r\nUse this war machine to target your enemy troops and fortifications in combat.",
+			"event": "Lucky you, you've found a shiny and unused cannon :)"
+		},
+		"graphics":
+		{
+			"image": "eldorado/creatures/iconsSmall/artifact/goldcannon.png",
+			"map": "eldorado/creatures/dwellings/goldavcnbksm.def"
+		}
+	}
+}

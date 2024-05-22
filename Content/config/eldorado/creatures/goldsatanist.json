@@ -1,0 +1,154 @@
+{
+	"ffgoldsatanist":
+	{
+		"name" :
+		{
+			"plural" : "Gold Satanists",
+			"singular" : "Gold Satanist"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 10,
+			 "min" : 6
+		},
+		"faction" : "eldorado",
+		"level" : 6,
+		"attack" : 18,
+		"defense" : 18,
+		"damage" :
+		{
+			 "min" : 15,
+			 "max" : 20
+		},
+		"growth" : 2,
+		"hitPoints" : 120,
+		"speed" : 12,
+		"fightValue" : 1800,
+		"aiValue" : 2000,
+		"cost" :
+		{
+			"gold" : 1600
+		},
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/satanistgold.def",
+			"map" : "eldorado/creatures/map/satanistgold.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/satanistgold.bmp",
+			"iconLarge" : "eldorado/creatures/iconsBig/satanistgold.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+		},
+		"sound" :
+		{
+			"attack": "AAGLATTK.wav",
+			"defend": "AAGLDFND.wav",
+			"killed": "AAGLKILL.wav",
+			"move": "AAGLMOVE.wav",
+			"wince": "AAGLWNCE.wav"
+		},
+		"abilities" :
+		{
+			"flying" :
+			{
+				"type" : "FLYING"
+			},
+			"resurrection100hp" : 
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.resurrection",
+				"val" : 100
+			},
+			"resurrects" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.resurrection",
+				"val" : 3
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 3, 4, 4, 5, 6, 7, 8, 9 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 7, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 8, 9 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "UNLIMITED_RETALIATIONS"
+				},
+				"values" : [ false, false, true, true, true, true, true, true, true, true ]	
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED", 
+					"subtype" : "spell.slayer"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 0, 1, 2, 3, 3 ]
+			}
+		]
+	}
+}
+
+
+

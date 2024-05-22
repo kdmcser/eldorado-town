@@ -1,0 +1,51 @@
+{
+	"gwMirne" :
+	{
+		"class" : "goldwoman",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/mirne/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/mirne/spec-large.bmp",
+			"large" : "eldorado/heroes/mirne/portrait-large.bmp",
+			"small" : "eldorado/heroes/mirne/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "fficequeen", "min" : 1, "max" : 1 },
+			{ "creature" : "fficequeen", "min" :  1, "max" :  1 },
+			{ "creature" : "fficequeen", "min" :  1, "max" :  1 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{ 
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Mirne",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "{Ice Queens}\r\n\r\nIncreases the Attack and Defence of Ice Queens for each level attained after 1th level.",
+				"tooltip" : "Creature Bonus: Ice Queens",
+				"name" : "Ice Queens"
+			}
+		},
+		"spellbook" :
+		[
+			"lightningBolt"
+		],
+		"specialty" : {
+			"creature" : "fficequeen"
+		}		
+	}
+}

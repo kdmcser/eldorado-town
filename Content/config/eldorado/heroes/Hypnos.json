@@ -1,0 +1,55 @@
+{
+	"gmHypnos" :
+	{
+		"class" : "goldmen",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/hypnos/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/hypnos/spec-large.bmp",
+			"large" : "eldorado/heroes/hypnos/portrait-large.bmp",
+			"small" : "eldorado/heroes/hypnos/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "resistance"
+			}
+		],
+		"texts" :
+		{
+			"name" : "Hypnos",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "{Resistance}\r\n\r\nReceives a 5% per level bonus to Resistance skill.",
+				"tooltip" : "Secondary Skill Bonus: Resistance",
+				"name" : "Resistance"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"resistance" : {
+					"type" : "MAGIC_RESISTANCE",
+					"targetSourceType" : "SECONDARY_SKILL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}		
+	}
+}

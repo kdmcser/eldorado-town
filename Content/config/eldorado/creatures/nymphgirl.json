@@ -1,0 +1,121 @@
+{
+
+	"ffnymphgirl" : 
+	{
+		"abilities" : 
+		{
+			"immuneToWater" : 
+			{ 
+				"subtype" : "water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"teleports" : 
+			{ 
+				"subtype" : "movementTeleporting",
+				"type" : "FLYING" 
+			}
+		},
+		"advMapAmount" : { "max" : 50, "min" : 20 },
+		"aiValue" : 57,
+		"attack" : 5,
+		"cost" : { "gold" : 35 },
+		"damage" : { "max" : 2, "min" : 1 },
+		"defense" : 2,
+		"faction" : "eldorado",
+		"fightValue" : 52,
+		"graphics" : {
+			"animation" : "eldorado/creatures/battle/nymphgirl.def",
+			"animationTime" : { "attack" : 1, "idle" : 10, "walk" : 1 },
+			"iconLarge" : "eldorado/creatures/iconsBig/nymphgirl.png",
+			"iconSmall" : "eldorado/creatures/iconsSmall/nymphgirl.png",
+			"map" : "eldorado/creatures/map/nymphgirl.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 16,
+		"hitPoints" : 4,
+		"level" : 1,
+		"name" : { "plural" : "Nymph Girls", "singular" : "Nymph Girl" },
+		"sound" : {
+			"attack" : "eldorado/nymph/attack.wav",
+			"defend" : "eldorado/nymph/defend.wav",
+			"killed" : "eldorado/nymph/kill.wav",
+			"move" : "eldorado/nymph/move.wav",
+			"startMoving": "eldorado/nymph/movestart.wav",
+			"endMoving": "eldorado/nymph/moveend.wav",
+			"wince" : "eldorado/nymph/wince.wav"
+		},
+		"speed" : 6,
+		"stackExperience" : 
+		[ 
+{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 0, 1, 1, 1, 1, 2, 2, 2, 2, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL",
+					"valueType" : "BASE_NUMBER"
+				},
+				"values" : [ 1, 1, 1, 1, 2, 2, 2, 2, 3, 3 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 2, 2, 2, 2 ]
+			},
+			{ 
+				"bonus" :
+				{ 
+					"type" : "STACKS_SPEED" 
+				}, 
+				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 3 ] 
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" : 
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.disruptingRay",
+					"addInfo" : [3, 2]
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]	
+			}
+		],
+		"upgrades" : [ "ffoceanidgirl" ]
+
+	}
+
+}

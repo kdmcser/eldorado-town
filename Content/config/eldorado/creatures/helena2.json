@@ -1,0 +1,161 @@
+{
+	"ffhelena2":
+    {
+		"name" :
+        {
+			"plural" : "Arch Helenas",
+			"singular" : "Arch Helena"
+		},
+        "faction" : "eldorado",
+		"level" : 4,
+		"cost" :
+        {
+			"gold" : 400
+		},
+		"speed" : 8,
+		"hitPoints" : 40,
+		"attack" : 12,
+		"defense" : 12,
+		"damage" :
+        {
+			"max" : 15,
+			"min" : 12
+		},
+		"doubleWide" : false,
+		"hasDoubleWeek" : true,
+		"growth" : 4,
+		"horde" : 0,
+		"shots" : 18,
+		"aiValue" : 345,
+		"fightValue" : 425,
+		"advMapAmount" :
+        {
+			"max" : 20,
+			"min" : 12
+		},
+		"abilities" :
+		{
+			"FLYING_ARMY" :
+            {
+				"type" : "FLYING"
+			},
+			"IS_UNDEAD" :
+			{
+				"type" : "UNDEAD"
+			},
+			"canshoot" :
+			{
+				"type" : "SHOOTER"
+			}
+		},
+		"graphics" :
+         {
+			"animation" : "eldorado/creatures/battle/helena.def",
+			"map" : "eldorado/creatures/map/helena.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/helena.bmp",
+			"iconLarge" : "eldorado/creatures/iconsBig/helena.bmp",
+			"animationTime" :
+            {
+				"attack" : 1,
+				"idle" : 10,
+				"walk" : 1
+			},
+			"missile" :
+			{
+				"projectile" : "eldorado/creatures/projectile/farrow.def",
+				"attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"lowerX" : 62,
+					"lowerY" : -93,
+					"middleX" : 62,
+					"middleY" : -93,
+					"upperX" : 62,
+					"upperY" : -93
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			},
+			"timeBetweenFidgets" : 1
+		},
+		"sound" :
+         {
+			"attack" : "eldorado/WGHTATTK.wav",
+			"defend" : "eldorado/WGHTDFND.wav",
+			"killed" : "eldorado/bansheedead.wav",
+			"move" :   "eldorado/WGHTMOVE.wav",
+			"shoot" :  "eldorado/bansheeshoot.wav",
+			"wince" :  "eldorado/bansheehurt.wav"
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 5, 6, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 4 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "NO_MELEE_PENALTY",
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FREE_SHOOTING",
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "BLOCKS_RETALIATION"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			}
+		]
+	}
+}

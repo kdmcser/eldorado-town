@@ -1,0 +1,51 @@
+{
+	"gmDaidaros" :
+	{
+		"class" : "goldmen",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/daidaros/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/daidaros/spec-large.bmp",
+			"large" : "eldorado/heroes/daidaros/portrait-large.bmp",
+			"small" : "eldorado/heroes/daidaros/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "waterMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		"texts" :
+		{
+			"name" : "Daidaros",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "{Nix Warrior Golds}\r\n\r\nIncreases Speed of any Nix Warrior Golds by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up)",
+				"tooltip" : "Creature Bonus: Nix Warrior Golds",
+				"name" : "Nix Warrior Golds"
+			}
+		},
+		"spellbook" :
+		[
+			"meteorShower"
+		],
+		"specialty" : {
+			"creature" : "ffnixwarriorgold"
+		}		
+	}
+}

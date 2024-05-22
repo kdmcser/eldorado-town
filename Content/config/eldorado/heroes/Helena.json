@@ -1,0 +1,51 @@
+{
+	"gwHelena" :
+	{
+		"class" : "goldwoman",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/helena/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/helena/spec-large.bmp",
+			"large" : "eldorado/heroes/helena/portrait-large.bmp",
+			"small" : "eldorado/heroes/helena/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffhelena", "min" :  3, "max" :  4 },
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			}
+		],
+		"texts" :
+		{
+			"name" : "Helena",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "{Helenas}\r\n\r\nIncreases Speed of any Helenas by 1 and their Attack and Defense skills by 5% for every 1 levels (rounded up)",
+				"tooltip" : "Creature Bonus: Helenas",
+				"name" : "Helenas"
+			}
+		},
+		"spellbook" :
+		[
+			"magicArrow"
+		],
+		"specialty" : {
+			"creature" : "ffhelena"
+		}		
+	}
+}

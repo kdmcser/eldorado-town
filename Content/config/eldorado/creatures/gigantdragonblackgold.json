@@ -1,0 +1,243 @@
+{
+	"ffgigantblackdragongold":
+	{
+		"name" :
+		{
+			"plural" : "Gigant BlackGold Dragons",
+			"singular" : "Gigant BlackGold Dragon"
+		},
+		"advMapAmount" :
+		{
+
+			 "max" : 12,
+			 "min" : 6
+		},
+        "faction" : "eldorado",
+		"level" : 7,
+		"attack" : 28,
+		"defense" : 28,
+		"damage" :
+		{
+			 "min" : 30,
+			 "max" : 40
+		},
+		"growth" : 1,
+		"hitPoints" : 300,
+		"speed" : 13,
+		"fightValue" : 5560,
+		"aiValue" : 7500,
+		"doubleWide" : true,
+		"cost" :
+		{
+			"gold" : 5000,
+			"gems" : 2
+		},
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/gigantdragonblackandgold.def",
+			"map" : "eldorado/creatures/map/gigantdragonblackandgold.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/gigantdragonblackandgold.bmp",
+			"iconLarge" : "eldorado/creatures/iconsBig/gigantdragonblackandgold.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.5,
+				"attack" : 1,
+				"idle" : 5
+			}
+		},
+		"sound" :
+		{
+			"attack": "RUSTATTK.wav",
+			"defend": "RUSTDFND.wav",
+			"killed": "RUSTKILL.wav",
+			"move": "RUSTMOVE.wav",
+			"wince": "RUSTWNCE.wav"
+		},
+		"abilities":
+		{
+            "teleports" :
+			{
+
+		        "type" : "FLYING",
+		        "subtype" : "movementTeleporting"
+			},
+            "immuneToMind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+            "spellImmunity" :
+			{
+				"type" : "LEVEL_SPELL_IMMUNITY",
+				"val" : 3
+			},
+            "regenerate" : 
+			{
+				"type" : "HP_REGENERATION",
+				"val" : 50
+			},
+            "deathCloud" :
+			{
+				"type" : "SPELL_LIKE_ATTACK",
+				"subtype" : "spell.deathCloud"
+			},
+			"dragon" :
+			{
+				"type" : "DRAGON_NATURE"
+			},
+			"mirror" :
+			{
+				"type" : "MAGIC_MIRROR",
+				"val" : 20
+			},
+			"casts" :
+			{
+				"type" : "CASTS",
+				"val" : 5
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 200
+			},
+			"castsMagicArrow" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.magicArrow",
+				"addInfo" : 22,
+				"val" : 2
+			},
+			"castsIceBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.iceBolt",
+				"addInfo" : 22,
+				"val" : 2
+			},
+			"castsLightningBolt" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.lightningBolt",
+				"addInfo" : 22,
+				"val" : 2
+			},
+			"castsChainLightning" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.chainLightning",
+				"addInfo" : 5,
+				"val" : 2
+			},
+			"castsFrostRing" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.frostRing",
+				"addInfo" : 10,
+				"val" : 2
+			},
+			"castsFireball" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.fireball",
+				"addInfo" : 21,
+				"val" : 2
+			},
+			"castsInferno" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.inferno",
+				"addInfo" : 5,
+				"val" : 2
+			},
+			"castsMeteorShower" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.meteorShower",
+				"addInfo" : 5,
+				"val" : 2
+			},
+		    "twohexattackbreath" :
+			{
+				"type" : "TWO_HEX_ATTACK_BREATH"
+			}
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [0, 0, 0, 1, 1, 1, 2, 2, 2, 2]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [0, 0, 0, 0, 1, 1, 1, 1, 1, 1]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_IMMUNITY", 
+					"subtype" : "spell.dispelHelpful", 
+				},
+				"values" : [0, 0, 0, 0, 1, 1, 1, 1, 1, 1]			
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_AFTER_ATTACK",
+					"subtype" : "spell.dispelHelpful", 
+					"addInfo" : 100
+				},
+				"values" : [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]			
+			}
+		]	
+	}
+}
+
+

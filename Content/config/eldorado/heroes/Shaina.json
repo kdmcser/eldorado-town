@@ -1,0 +1,56 @@
+{
+	"gwShaina" :
+	{
+		"class" : "goldwoman",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/shaina/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/shaina/spec-large.bmp",
+			"large" : "eldorado/heroes/shaina/portrait-large.bmp",
+			"small" : "eldorado/heroes/shaina/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "advanced",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Shaina",
+			"biography" : "undetermined",
+			"specialty" :
+			{
+				"description" : "{Sorcery}\r\n\r\nReceives a 5% per level bonus to Sorcery skill.",
+				"tooltip" : "Secondary Skill Bonus: Sorcery",
+				"name" : "Sorcery"
+			}
+		},
+		"spellbook" :
+		[
+			"dispel"
+		],
+		"specialty" : {
+			"bonuses" : {
+				"sorcery" : {
+					"targetSourceType" : "SECONDARY_SKILL",
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "spellSchool.any",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE"
+				}
+			}
+		}				
+	}
+}

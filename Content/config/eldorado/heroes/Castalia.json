@@ -1,0 +1,60 @@
+{
+	"gwCastalia" :
+	{
+		"class" : "goldwoman",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/castalia/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/castalia/spec-large.bmp",
+			"large" : "eldorado/heroes/castalia/portrait-large.bmp",
+			"small" : "eldorado/heroes/castalia/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "airMagic"
+			},
+			{
+				"level" : "basic",
+				"skill" : "wisdom"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Castalia",
+			"biography" : "",
+			"specialty" : 
+			{
+				"description" : "{Stone Skin}\r\n\r\nCan cast Stone Skin spell with increased effectiveness.",
+				"tooltip" : "Spell Bonus: Stone skin",
+				"name" : "Stone Skin"
+			}
+		},
+		"spellbook" :
+		[
+			"stoneSkin"		
+                ],
+		"specialty" : {
+			"bonuses" : {
+				"stoneSkin" : {
+					"subtype" : "spell.stoneSkin",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+	}
+}
+
+

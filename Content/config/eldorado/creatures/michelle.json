@@ -1,0 +1,178 @@
+{
+	"ffmichelle" :
+	{
+		"name" :
+		{
+			"singular" : "Michelles",
+			"plural" : "Michelle"
+		},
+		"level" : 5,
+        "faction" : "eldorado",
+		"cost" :
+		{
+			"gold" : 600
+		},
+		"fightValue" : 830,
+		"aiValue" : 850,
+		"growth" : 3,
+		"attack" : 12,
+		"defense" : 10,
+		"hitPoints" : 45,
+		"speed" : 8,
+		"damage" :
+		{
+			"min" : 10,
+			"max" : 15
+		},
+		"advMapAmount" :
+		{
+			"min" : 10,
+			"max" : 15
+		},
+		"doubleWide" : true,
+		"abilities" : 
+		{
+			"air" : 
+			{
+				"subtype" : "air",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"water" : 
+			{
+				"subtype" : "water",
+				"type" : "SPELL_DAMAGE_REDUCTION",
+				"val" : 100
+			},
+			"mind" : 
+			{
+				"type" : "MIND_IMMUNITY"
+			},
+			"aura" : 
+			{
+				"type" : "SPELL_RESISTANCE_AURA",
+				"val" : 5
+			},
+			"resistance" : 
+			{
+				"type" : "MAGIC_RESISTANCE",
+				"val" : 10
+			},
+			"spellcaster" : 
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.dispel",
+				"val" : 3
+			},
+			"hypnotize" :
+			{
+				"type" : "SPECIFIC_SPELL_POWER",
+				"subtype" : "spell.dispel",
+				"val" : 100
+			},
+			"spellpoints" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"snow" :
+			{
+				"type" : "NO_TERRAIN_PENALTY",
+				"subtype" : "terrain.snow"
+			},
+			"teleports" :
+			{
+					"type" : "FLYING",
+					"subtype" : "movementTeleporting"
+			}
+		},
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/michelle.def",
+			"map" : "eldorado/creatures/map/michelle.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/michelle.png",
+			"iconLarge" : "eldorado/creatures/iconsBig/michelle.png",
+			"timeBetweenFidgets" : 1.00,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			}
+		},
+		"sound" :
+		{
+			"attack" : "eldorado/WGHTATTK.wav",
+			"defend" : "eldorado/WGHTDFND.wav",
+			"killed" : "eldorado/bansheedead.wav",
+			"move" :   "eldorado/WGHTMOVE.wav",
+			"shoot" :  "eldorado/bansheeshoot.wav",
+			"wince" :  "eldorado/bansheehurt.wav"
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 4, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "SPELL_DAMAGE_REDUCTION",
+					"subtype" : "spellSchool.any"
+				},
+				"values" : [ 3, 6, 9, 12, 15, 21, 24, 27, 30, 33 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HP_REGENERATION"
+				},
+				"values" : [ 0, 0, 0, 0, 50, 50, 50, 50, 50, 50 ]
+			}
+		]
+	}
+}

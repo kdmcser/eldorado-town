@@ -1,0 +1,53 @@
+{
+	"gwTatiana" :
+	{
+		"class" : "goldwoman",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/tatiana/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/tatiana/spec-large.bmp",
+			"large" : "eldorado/heroes/tatiana/portrait-large.bmp",
+			"small" : "eldorado/heroes/tatiana/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "leadership"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Tatiana",
+			"biography" : "undetermined",
+			"specialty" :
+			{
+				"description" : "{Sulfur + 1}\r\n\r\nIncreases kingdom's income by 1 mercury per day",
+				"tooltip" : "+1 Sulfur each day",
+				"name" : "+1 Sulfur"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"sulfur" : {
+					"subtype" : "resource.sulfur",
+					"type" : "GENERATE_RESOURCE",
+					"val" : 1
+				}
+			}
+		}
+	}
+}

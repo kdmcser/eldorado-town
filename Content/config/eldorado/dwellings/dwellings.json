@@ -1,0 +1,148 @@
+{
+	"core:creatureGeneratorCommon" : {
+		"types" : {
+			"nymphgirloutpost" : {
+				"name" : "Girl House",
+				"creatures" : [[ "ffnymphgirl" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw1.def",
+						"mask" : [ "VVV", "VVV", "VBA" ],
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						],
+					},
+				}
+			},
+			"pegasusoutpost" : {
+				"name" : "Pegasus Tower",
+				"creatures" : [[ "ffheavenlypegasus" ]],
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw2.def",
+						"mask" : [ "VVVVV", "BBABB", "VVVVV"]
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+
+					}
+				},
+			},
+			"cerberyoutpost" : {
+				"name" : "Cerbery Tower",
+				"creatures" : [[ "plcerberus" ]],
+				"templates" : {
+					"default" : {	
+						"animation" : "eldorado/creatures/dwellings/dw3.def",
+						"mask" : [ "VVVVV", "VBBBV", "BBAVV" ],
+						"visitableFrom" : [
+							"---",
+							"-+-",
+							"+++"
+						],
+					},
+				}
+			},
+			"helenaoutpost" : {
+				"name" : "Barracks",
+				"creatures" : [[ "ffhelena" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw4.def",
+						"mask" : [ "VVV", "VBB", "VBA" ],
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"icequeenoutpost" : {
+				"name" : "Monastery",
+				"creatures" : [[ "fficequeen" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw5.def",
+						"mask" : [ "VVV", "VVV", "VVV", "VVV", "VBB", "BBA" ],
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"satanistoutpost" : {
+				"name" : "Training Grounds",
+				"creatures" : [[ "ffinfernalsatanist" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw6.def",
+						"mask" : [ "VVV", "BBB", "BAB" ],
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"serpentcave" : {
+				"name" : "Dragon Tower",
+				"creatures" : [[ "ffgigantblackdragon" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw7.def",
+						"mask" : [ "VVV", "VVV", "VBA" ],
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"nixgoldoutpost" : {
+				"name" : "Nix Golds Outpost",
+				"creatures" : [[ "ffnixwarriorgold" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw8.def",
+						"mask" : [ "VVV", "VVV", "VAB" ],
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			},
+			"faeriegolddragonoutpost" : {
+				"name" : "Faerie Gold Dragons Cave",
+				"creatures" : [[ "fffaeriegolddragon" ]],
+				"guards" : true,
+				"templates" : {
+					"default" : {
+						"animation" : "eldorado/creatures/dwellings/dw9.def",
+						"mask" : [ "VVV", "VVV", "VBB", "VAB" ],
+						"visitableFrom" : [
+							"---",
+							"+++",
+							"+++"
+						]
+					}
+				}
+			}
+		}		
+	}
+}

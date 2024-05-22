@@ -1,0 +1,156 @@
+{
+	"plcerberus":
+	{
+		"name" :
+		{
+			"plural" : "Cerberys",
+			"singular" : "Cerbery"
+		},
+		"advMapAmount" :
+		{
+			 "max" : 20,
+			 "min" : 12
+		},
+        "faction" : "eldorado",
+		"upgrades":
+        [
+			"ffcerberygold"
+        ],
+		"aiValue" : 320,
+		"attack" : 8,
+		"cost" :
+		{
+			"gold" : 240
+		},
+		"damage" :
+		{
+			 "max" : 5,
+			 "min" : 5
+		},
+		"defense" : 8,
+		"hitPoints" : 20,
+		"fightValue" : 300,
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/cerbery.def",
+			"map" : "eldorado/creatures/map/cerbery.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/cerbery.bmp",
+			"iconLarge" : "eldorado/creatures/iconsBig/cerbery.bmp",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1,
+				"attack" : 1,
+				"idle" : 10
+			}
+                },
+		"growth" : 7,
+		"horde" : 4,
+		"level" : 3,
+		"sound" :
+		{
+			"attack": "CERBATTK.wav",
+			"defend": "CERBDFND.wav",
+			"killed": "CERBKILL.wav",
+			"move": "CERBMOVE.wav",
+			"wince": "CERBWNCE.wav"
+		},
+		"speed" : 6,
+        "abilities":
+        {
+			"threeHeads" : 
+			{
+				"type" : "THREE_HEADED_ATTACK"
+			},
+			"noRetaliation" :
+			{
+				"type" : "BLOCKS_RETALIATION"
+			}
+        },
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.attack",
+					"type" : "PRIMARY_SKILL"
+
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},	
+			{
+				"bonus" :
+				{
+					"subtype" : "primarySkill.defence",
+					"type" : "PRIMARY_SKILL"
+
+				},
+				"values" : [ 1, 1, 2, 2, 3, 3, 4, 4, 5, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 1, 2, 2, 3, 3, 4, 4, 5 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+
+				},
+				"values" : [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ADDITIONAL_ATTACK"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 1, 1, 1, 1, 1 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "ENCHANTED",
+					"subtype" : "spell.protectFire"
+				},
+				"values" : [ 0, 0, 1, 1, 1, 1, 1, 2, 2, 2 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, false, false, false, true, true, true ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "HATE",
+					"subtype" : "creature.griffin"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]
+			}
+		]
+    }
+}
+
+

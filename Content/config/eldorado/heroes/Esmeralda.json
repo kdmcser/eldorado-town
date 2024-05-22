@@ -1,0 +1,56 @@
+{
+	"gwEsmeralda" :
+	{
+		"class" : "goldwoman",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/esmeralda/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/esmeralda/spec-large.bmp",
+			"large" : "eldorado/heroes/esmeralda/portrait-large.bmp",
+			"small" : "eldorado/heroes/esmeralda/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "pathfinding"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Esmeralda",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "Receives a 5% per level bonus to Logistics skill percentage.",
+				"tooltip" : "",
+				"name" : "Logistics"
+			}
+		},
+		"specialty" : {
+			"bonuses" : {
+				"logistics" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementLand",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}	
+	}
+}

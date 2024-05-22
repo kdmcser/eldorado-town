@@ -1,0 +1,59 @@
+{
+	"gmArgor" :
+	{
+		"class" : "goldmen",
+		"female" : false,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/argor/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/argor/spec-large.bmp",
+			"large" : "eldorado/heroes/argor/portrait-large.bmp",
+			"small" : "eldorado/heroes/argor/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "ffnymphgirl", "min" : 20, "max" : 30 },
+			{ "creature" : "ffheavenlypegasus", "min" :  4, "max" :  7 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "luck"
+			},
+			{
+				"level" : "basic",
+				"skill" : "artillery"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Argor",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "{luck}\r\n\r\nReceives a 5% per level bonus to luck skill.",
+				"tooltip" : "Secondary Skill Bonus: luck",
+				"name" : "luck"
+			}
+		},
+		"specialty": //luck
+		{
+			"bonuses" : {
+				"luck" : {
+					"type" : "LUCK",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}
+	}
+}
+
+
+

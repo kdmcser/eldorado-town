@@ -1,0 +1,129 @@
+{
+	"goldcannon":
+	{
+		"name" :
+		{
+			"plural" : "Gold Cannons",
+			"singular" : "Gold Cannon"
+		},
+		"faction" : "eldorado",
+		"level": 6,
+		"aiValue" : 2500,
+		"special" : true,
+		"attack" : 20,
+		"cost": 
+		{
+			"gold": 5000
+		},
+		"damage" :
+		{
+			"max" : 16,
+			"min" : 10
+		},
+		"defense" : 10,
+		"fightValue" : 2500,
+		"graphics" :
+		{
+			"animation" : "eldorado/creatures/battle/goldcannon.def",
+			"iconSmall" : "eldorado/creatures/iconsSmall/goldcannon.png",
+			"iconLarge" : "eldorado/creatures/iconsbig/goldcannon.png",
+			"map" : "eldorado/creatures/map/goldcannon.def",
+			"timeBetweenFidgets" : 1,
+			"animationTime" :
+			{
+				"walk" : 1.00,
+				"idle" : 10.00,
+				"attack" : 1.00
+			},
+			"missile" :
+			{
+				"projectile" : "eldorado/creatures/projectile/SMCANX.def",
+				"attackClimaxFrame" : 4,
+				"offset" :
+				{
+					"lowerX" : 62,
+					"lowerY" : -93,
+					"middleX" : 62,
+					"middleY" : -93,
+					"upperX" : 62,
+					"upperY" : -93
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+
+			}
+		},
+		"doubleWide" : true,
+		"growth" : 0,
+		"hitPoints" : 250,
+        "shots" : 24,
+		"sound" :
+		{
+			"killed": "eldorado/cannon/CANNKILL.wav",
+			"shoot" : "eldorado/cannon/CANNSHOT.wav",
+			"wince": "eldorado/cannon/CANNWNCE.wav"
+		},
+		"speed" : 0,
+		"abilities" :
+		{
+        	"shooter" :
+			{
+				"type" : "SHOOTER"
+			},
+			"canshootwalls" :
+			{
+				"type" : "CATAPULT"
+			},
+			"warmachine" :
+			{
+				"type" : "SIEGE_WEAPON"
+			},
+			"noRetaliation" : 
+			{
+                "type" : "NO_RETALIATION"
+            }
+		},
+		"stackExperience" :
+		[
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 1, 2, 3, 4, 5, 5, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 3, 4, 5, 6, 6, 7, 8 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 2, 3, 4, 4, 5, 6, 7, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 0, 1, 2, 3, 3, 4, 5, 6, 6, 7 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACK_HEALTH",
+					"valueType" : "PERCENT_TO_BASE"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			}
+		]
+	}
+}

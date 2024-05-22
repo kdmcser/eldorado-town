@@ -1,0 +1,51 @@
+{
+	"gwAspides" :
+	{
+		"class" : "goldwoman",
+		"female" : true,
+		"images" :
+		{
+			"specialtySmall" : "eldorado/heroes/aspides/spec-small.bmp",
+			"specialtyLarge" : "eldorado/heroes/aspides/spec-large.bmp",
+			"large" : "eldorado/heroes/aspides/portrait-large.bmp",
+			"small" : "eldorado/heroes/aspides/portrait-small.bmp"
+		},
+
+		"army" :
+		[
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 },
+			{ "creature" : "plcerberus", "min" :  3, "max" :  4 }
+		],
+
+		"skills" :
+		[
+			{
+				"level" : "basic",
+				"skill" : "logistics"
+			},
+			{
+				"level" : "basic",
+				"skill" : "earthMagic"
+			},
+		],
+		"texts" :
+		{
+			"name" : "Aspides",
+			"biography" : "",
+			"specialty" :
+			{
+				"description" : "{Cerberys}\r\n\r\nIncreases Speed of any Cerberys by 1 and their Attack and Defense skills by 5% for every 3 levels (rounded up)",
+				"tooltip" : "Creature Bonus: Cerberys",
+				"name" : "Cerberys"
+			}
+		},
+		"spellbook" :
+		[
+		       "viewEarth"
+		],
+		"specialty" : {
+			"creature" : "plcerberus"
+		}		
+	}
+}

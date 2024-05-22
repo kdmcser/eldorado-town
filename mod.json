@@ -1,0 +1,88 @@
+{
+	"name" : "Eldorado",
+	"description" : "Eldorado Town",
+	"author": "Planetavril and kdmcser",
+	"version" : "0.3",
+	"contact": "",
+	"modType" : "Town",
+	"changelog" :
+    {
+		"Test" : ["Initial release"],
+		"0.2" : ["Update for vcmi-1.4"],
+		"0.3" : ["rebalanced"]
+    },
+	"chinese" : {
+		"name" : "黄金城",
+		"description" : "新城镇黄金城",
+		"translations" : [
+			"translation/eldorado/chinese.json"
+		]
+	},
+	"factions" :
+	[
+		"config/eldorado/town/buildings.json",
+		"config/eldorado/town/faction.json",
+		"config/eldorado/town/puzzle.json",
+		"config/eldorado/town/siege.json",
+		"config/eldorado/town/structures.json"
+	],
+	"creatures" :
+	[
+		"config/eldorado/creatures/cerbery.json",
+		"config/eldorado/creatures/cerberygold.json",
+		"config/eldorado/creatures/faeriegolddragon.json",
+		"config/eldorado/creatures/gigantdragonblack.json",
+		"config/eldorado/creatures/gigantdragonblackgold.json",
+		"config/eldorado/creatures/goldsatanist.json",
+		"config/eldorado/creatures/heavenlypegasus.json",
+		"config/eldorado/creatures/helena.json",
+		"config/eldorado/creatures/helena2.json",
+		"config/eldorado/creatures/icequeen.json",
+		"config/eldorado/creatures/infernalsatanist.json",
+		"config/eldorado/creatures/michelle.json",
+		"config/eldorado/creatures/nixwarriorgold.json",
+		"config/eldorado/creatures/nymphgirl.json",
+		"config/eldorado/creatures/oceanidgirl.json",
+		"config/eldorado/creatures/yellowpegasus.json",
+		"config/eldorado/creatures/goldcannon.json"
+	],
+	"heroClasses" :
+	[
+		"config/eldorado/classes/goldmen.json",
+		"config/eldorado/classes/goldwoman.json"
+	],
+       
+	"artifacts" :
+	[
+		"config/eldorado/artifact/goldcannonArt.json"
+	],
+	"heroes" :
+	[
+		"config/eldorado/heroes/Aesir.json",
+		"config/eldorado/heroes/Argor.json",
+		"config/eldorado/heroes/Aspides.json",
+		"config/eldorado/heroes/Castalia.json",
+		"config/eldorado/heroes/Daidaros.json",
+		"config/eldorado/heroes/Esmeralda.json",
+		"config/eldorado/heroes/Helena.json",
+		"config/eldorado/heroes/Hypnos.json",
+		"config/eldorado/heroes/Mirne.json",
+		"config/eldorado/heroes/Orpheo.json",
+		"config/eldorado/heroes/Seika.json",
+		"config/eldorado/heroes/Shaina.json",
+		"config/eldorado/heroes/Sirya.json",
+		"config/eldorado/heroes/Tatiana.json",
+		"config/eldorado/heroes/Thanatos.json",
+		"config/eldorado/heroes/Valentine.json"
+    ],
+	"objects" :
+	[
+        "config/eldorado/dwellings/dwellings.json",
+		"config/eldorado/banks/thrones.json"
+	],
+	"spells" :
+	[
+		"config/eldorado/spells/moat.json"
+	]
+}
+

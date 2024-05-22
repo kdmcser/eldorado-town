@@ -1,0 +1,159 @@
+{
+	"ffnixwarriorgold" : 
+	{
+		"abilities" :
+		{
+			"shield" :
+			{
+			   "subtype" : "damageTypeAll",
+			   "type" : "GENERAL_DAMAGE_REDUCTION",
+			   "val" : 20
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.haste",
+				"val" : 2
+			}
+		},
+		"advMapAmount" :
+		{
+			"max" : 20,
+			"min" : 10 
+		},
+		"aiValue" : 156,
+		"attack" : 5,
+		"cost" :
+		{
+		   "gold" : 150
+		},
+		"damage" :
+		{
+			"max" : 12,
+			"min" : 6
+		},
+		"defense" : 5,
+		"faction" : "eldorado",
+		"fightValue" : 130,
+		"graphics" :
+        {
+			"animation" : "eldorado/creatures/battle/nixwarriorgold.def",
+			"animationTime" :
+			{
+				  "attack" : 1,
+				  "idle" : 10,
+				  "walk" : 1
+			},
+			"iconLarge" : "eldorado/creatures/iconsBig/nixwarriorgold.png",
+			"iconSmall" : "eldorado/creatures/iconsSmall/nixwarriorgold.png",
+			"map" : "eldorado/creatures/map/nixwarriorgold.def",
+			"timeBetweenFidgets" : 1
+		},
+		"growth" : 9,
+		"shots" : 24,
+		"hitPoints" : 40,
+		"level" : 4,
+		"doubleWide" : false,
+		"special" : true,
+		"hasDoubleWeek": false,
+		"name" :
+		{
+			"plural" : "Nix Warrior Golds",
+			"singular" : "Nix Warrior Gold"
+		},
+		"sound" :
+        {
+			"attack" : "eldorado/nix/attack.wav",
+			"defend" : "eldorado/nix/defend.wav",
+			"killed" : "eldorado/nix/kill.wav",
+			"move" : "eldorado/nix/move.wav",
+			"wince" : "eldorado/nix/wince.wav"
+		},
+		"speed" : 4,
+		"stackExperience" :
+        [
+					{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},	
+			{
+				"bonus" :
+				{
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMax"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "CREATURE_DAMAGE",
+					"subtype" : "creatureDamageMin"
+				},
+				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+			},
+			{
+				"bonus" :
+				{
+					"valueType" : "PERCENT_TO_BASE",
+					"type" : "STACK_HEALTH"
+				},
+				"values" : [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "STACKS_SPEED"
+				},
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3 ]
+			},
+			{
+				"bonus" :
+				{
+					"type" : "FEARLESS"
+				},
+				"values" : [ false, false, false, false, true, true, true, true, true, true ]
+			},
+			{
+				"bonus" : 
+				{
+					"type" : "MAGIC_RESISTANCE"
+				},
+				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]
+			},
+			{
+				"bonus" : { "subtype" : "damageTypeAll", "type" : "GENERAL_DAMAGE_REDUCTION" },
+				"values" : [ 24, 24, 28, 28, 32, 32, 36, 36, 40, 40 ]
+			}
+		]
+
+	}
+
+}
