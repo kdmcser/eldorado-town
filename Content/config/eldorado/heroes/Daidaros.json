@@ -35,7 +35,7 @@
 			"biography" : "",
 			"specialty" :
 			{
-				"description" : "{Nix Warrior Golds}\r\n\r\nIncreases Speed of any Nix Warrior Golds by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up)",
+				"description" : "{Nix Warrior Golds}\r\n\r\nIncreases Speed of any Nix Warrior Golds by 1 and their Attack and Defense skills by 5% for every 7 levels (rounded up)",
 				"tooltip" : "Creature Bonus: Nix Warrior Golds",
 				"name" : "Nix Warrior Golds"
 			}

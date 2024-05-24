@@ -243,7 +243,21 @@
 					"requires" : ["dwellingLvl4"],
 					"id" : 21
 				},
-				"special3" : 
+				"special3" :
+				{
+					"description" : "The Gold Portal allow travels between Eldorado towns containing The Gold Portal. Destination town must be unoccupied.",
+					"name" : "Gold Portal",
+					"cost" :
+					{
+						"wood" : 5,
+						"ore" : 5,
+						"gold" : 10000
+					},
+					"type" : "castleGate", 
+					"requires" : [ "citadel" ],
+					"id" : 22
+				},
+				"special4" : 
 				{
 					"description" : "The Brotherhood Of The Sword, earns your kingdom 500 gold per day.",
 					"name" : "Brotherhood Of The Sword",
@@ -254,9 +268,9 @@
 					"type" : "defenceVisitingBonus",
 					"requires" : [ "tavern" ],
 					"produce": { "gold": 500 }, 
-					"id" : 22
+					"id" : 23
 				},
-				"special4" : 
+				"special5" : 
 				{
 					"description" : "The Gold Tower, earns your kingdom 1000 gold per day.",
 					"name" : "Gold Tower",
@@ -264,11 +278,11 @@
 					{
 						"gold" : 5000
 					},
-					"requires" : [ "special3" ],
-					"produce": {"gold": 500 }, 
-					"id" : 23
+					"requires" : [ "special4" ],
+					"produce": {"gold": 1000 }, 
+					"id" : 24
 				},
-				"special5" : 
+				"special6" : 
 				{
 					"description" : "The Gold Balls, earns your kingdom 1000 gold, 2 woods, 2 ores and 1 other resources per day.",
 					"name" : "Gold Ball",
@@ -276,22 +290,8 @@
 					{
 						"gold" : 20000
 					},
-					"requires" : ["allOf", ["special4"], ["dwellingUpLvl7"]],
+					"requires" : ["allOf", ["special5"], ["dwellingUpLvl7"]],
 					"produce": { "wood":2,"mercury":1,"ore":2,"sulfur":1,"crystal":1,"gems":1,"gold": 1000 }, 
-					"id" : 24
-				},
-				"special6" :
-				{
-					"description" : "The Gold Portal allow travels between towns containing The Gold Portal or Castle Gate. Destination town must be unoccupied.",
-					"name" : "Gold Portal",
-					"cost" :
-					{
-						"wood" : 5,
-						"ore" : 5,
-						"gold" : 10000
-					},
-					"type" : "castleGate", 
-					"requires" : [ "citadel" ],
 					"id" : 25
 				},
 				"grail" :

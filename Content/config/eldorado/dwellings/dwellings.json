@@ -12,8 +12,8 @@
 							"---",
 							"+++",
 							"+++"
-						],
-					},
+						]
+					}
 				}
 			},
 			"pegasusoutpost" : {
@@ -22,15 +22,15 @@
 				"templates" : {
 					"default" : {
 						"animation" : "eldorado/creatures/dwellings/dw2.def",
-						"mask" : [ "VVVVV", "BBABB", "VVVVV"]
+						"mask" : [ "VVVVV", "BBABB", "VVVVV"],
 						"visitableFrom" : [
 							"---",
 							"-+-",
 							"+++"
-						],
+						]
 
 					}
-				},
+				}
 			},
 			"cerberyoutpost" : {
 				"name" : "Cerbery Tower",
@@ -43,8 +43,8 @@
 							"---",
 							"-+-",
 							"+++"
-						],
-					},
+						]
+					}
 				}
 			},
 			"helenaoutpost" : {

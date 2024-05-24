@@ -18,7 +18,7 @@
 		},
 		"name" : "Gold Men",
 		"affinity" : "magic",
-	    "commander" : "ffnixwarriorgold",
+	    "commander" : "ffnixwarriorgoldcmd",
 		"primarySkills" :
 		{
 			"attack"     : 0,

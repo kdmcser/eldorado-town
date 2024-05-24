@@ -18,7 +18,7 @@
 		},
 		"name" : "Gold Woman",
 		"affinity" : "might",
-	    "commander" : "ffnixwarriorgold",
+	    "commander" : "ffnixwarriorgoldcmd",
 		"primarySkills" :
 		{
 			"attack"     : 2,

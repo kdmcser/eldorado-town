@@ -1,58 +1,81 @@
 {
-	"ffnixwarriorgold" : {
+	"ffnixwarriorgoldcmd" : 
+	{
 		"abilities" :
 		{
 			"shield" :
 			{
 			   "subtype" : "damageTypeAll",
 			   "type" : "GENERAL_DAMAGE_REDUCTION",
-			   "val" : 60
-			} 
+			   "val" : 20
+			},
+			"castsAmount" :
+			{
+				"type" : "CASTS",
+				"val" : 1
+			},
+			"enchant" :
+			{
+				"type" : "CREATURE_ENCHANT_POWER",
+				"val" : 1
+			},
+			"spellpower" :
+			{
+				"type" : "CREATURE_SPELL_POWER",
+				"val" : 100
+			},
+			"canCast" :
+			{
+				"type" : "SPELLCASTER",
+				"subtype" : "spell.haste",
+				"val" : 2
+			}
 		},
-
 		"advMapAmount" :
 		{
-			"max" : 12,
-			"min" : 6 
+			"max" : 20,
+			"min" : 10 
 		},
-		"aiValue" : 4500,
-		"attack" : 22,
+		"aiValue" : 156,
+		"attack" : 5,
 		"cost" :
-        {
-             "gold" : 3000
-        },
-
+		{
+		   "gold" : 150
+		},
 		"damage" :
-        {
-            "max" : 40,
-            "min" : 25
-        },
-		"defense" : 20,
+		{
+			"max" : 12,
+			"min" : 6
+		},
+		"defense" : 5,
 		"faction" : "eldorado",
-		"fightValue" : 3865,
+		"fightValue" : 130,
 		"graphics" :
-            {
+        {
 			"animation" : "eldorado/creatures/battle/nixwarriorgold.def",
 			"animationTime" :
 			{
-				"attack" : 1,
-				"idle" : 10,
-				"walk" : 1
+				  "attack" : 1,
+				  "idle" : 10,
+				  "walk" : 1
 			},
 			"iconLarge" : "eldorado/creatures/iconsBig/nixwarriorgold.png",
 			"iconSmall" : "eldorado/creatures/iconsSmall/nixwarriorgold.png",
 			"map" : "eldorado/creatures/map/nixwarriorgold.def",
 			"timeBetweenFidgets" : 1
 		},
-		"growth" : 2,
-		"hitPoints" : 190,
-		"level" : 7,
+		"growth" : 9,
+		"shots" : 24,
+		"hitPoints" : 40,
+		"level" : 4,
 		"doubleWide" : false,
+		"special" : true,
+		"hasDoubleWeek": false,
 		"name" :
-        {
-            "plural" : "Nix Warrior Golds",
-             "singular" : "Nix Warrior Gold"
-        },
+		{
+			"plural" : "Nix Warrior Golds",
+			"singular" : "Nix Warrior Gold"
+		},
 		"sound" :
         {
 			"attack" : "eldorado/nix/attack.wav",
@@ -61,24 +84,22 @@
 			"move" : "eldorado/nix/move.wav",
 			"wince" : "eldorado/nix/wince.wav"
 		},
-		"speed" : 10,
+		"speed" : 4,
 		"stackExperience" :
         [
 			{
 				"bonus" :
 				{
-					"subtype" : "primarySkill.attack",
-					"type" : "PRIMARY_SKILL"
-
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.attack"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},	
 			{
 				"bonus" :
 				{
-					"subtype" : "primarySkill.defence",
-					"type" : "PRIMARY_SKILL"
-
+					"type" : "PRIMARY_SKILL",
+					"subtype" : "primarySkill.defence"
 				},
 				"values" : [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 			},
@@ -111,7 +132,7 @@
 				{
 					"type" : "STACKS_SPEED"
 				},
-				"values" : [0, 0, 0, 1, 1, 1, 2, 2, 2, 2]
+				"values" : [ 0, 0, 0, 1, 1, 2, 2, 2, 2, 3 ]
 			},
 			{
 				"bonus" :
@@ -128,19 +149,9 @@
 				"values" : [ 0, 0, 0, 0, 0, 10, 20, 30, 40, 50 ]
 			},
 			{
-				"bonus" : 
-				{ 
-					"type" : "ADDITIONAL_RETALIATION" 
-				},
-				"values" : [ 0, 0, 0, 1, 1, 1, 2, 2, 2, 0 ]
-			},
-			{
-				"bonus" : 
-				{ 
-					"type" : "UNLIMITED_RETALIATIONS" 
-				},
-				"values" : [ false, false, false, false, false, false, false, false, false, true ]
-			},
+				"bonus" : { "subtype" : "damageTypeAll", "type" : "GENERAL_DAMAGE_REDUCTION" },
+				"values" : [ 4, 4, 8, 8, 12, 12, 16, 16, 20, 20 ]
+			}
 		]
 
 	}

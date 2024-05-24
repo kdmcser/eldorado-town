@@ -2,14 +2,16 @@
 	"name" : "Eldorado",
 	"description" : "Eldorado Town",
 	"author": "Planetavril and kdmcser",
-	"version" : "0.3",
+	"version" : "0.5",
 	"contact": "",
 	"modType" : "Town",
 	"changelog" :
     {
 		"Test" : ["Initial release"],
 		"0.2" : ["Update for vcmi-1.4"],
-		"0.3" : ["rebalanced"]
+		"0.3" : ["Rebalanced"],
+		"0.4" : ["Graphics fix"],
+		"0.5" : ["Special building fix, change some creatures ability"]
     },
 	"chinese" : {
 		"name" : "黄金城",
@@ -41,6 +43,7 @@
 		"config/eldorado/creatures/infernalsatanist.json",
 		"config/eldorado/creatures/michelle.json",
 		"config/eldorado/creatures/nixwarriorgold.json",
+		"config/eldorado/creatures/nixwarriorgoldcmd.json",
 		"config/eldorado/creatures/nymphgirl.json",
 		"config/eldorado/creatures/oceanidgirl.json",
 		"config/eldorado/creatures/yellowpegasus.json",
