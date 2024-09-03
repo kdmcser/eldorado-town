@@ -21,9 +21,13 @@
 		"skills" :
 		[
 			{
-				"level" : "advanced",
+				"level" : "basic",
 				"skill" : "wisdom"
 			},
+			{
+				"level" : "basic",
+				"skill" : "sorcery"
+			}
 		],
 		"texts" :
 		{

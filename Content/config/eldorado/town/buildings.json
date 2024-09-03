@@ -179,6 +179,7 @@
 						"ore" : 5,
 						"gold" : 5000
 					},
+					"produce": { "sulfur": 1 },
 					"requires" : ["marketplace"],
 					"id" : 15
 				},
@@ -191,6 +192,7 @@
 						"wood" : 5,
 						"gold" : 1000
 					},
+					"warMachine" : "goldcannon",
 					"id" : 16
 				},
 				"horde1" :
@@ -226,7 +228,15 @@
                     	"ore" : 5,
 						"gold" : 1000
 					},
-					"type" : "attackVisitingBonus",
+					"configuration" : {
+						"visitMode" : "hero",
+						"rewards" : [
+							{
+								"message" : "@core.genrltxt.584",
+								"primary" : { "attack" : 1 }
+							}
+						]
+					},
 					"requires" : ["mageGuild1"],
 					"id" : 17
 				},
@@ -239,7 +249,16 @@
 						"wood" : 10,
 						"gold" : 2000
 					},
-					"type" : "stables",
+					"configuration" : {
+						"visitMode" : "bonus",
+						"rewards" : [
+							{
+								"message" : "@core.genrltxt.580",
+								"movePoints" : 400,
+								"bonuses" : [ { "type" : "MOVEMENT", "subtype" : "heroMovementLand",  "val" : 400, "valueType" : "ADDITIVE_VALUE", "duration" : "ONE_WEEK"} ]
+							}
+						]
+					},
 					"requires" : ["dwellingLvl4"],
 					"id" : 21
 				},
@@ -265,7 +284,15 @@
 					{
 						"gold" : 2500
 					},
-					"type" : "defenceVisitingBonus",
+					"configuration" : {
+						"visitMode" : "hero",
+						"rewards" : [
+							{
+								"message" : "@core.genrltxt.585",
+								"primary" : { "defence" : 1 }
+							}
+						]
+					},
 					"requires" : [ "tavern" ],
 					"produce": { "gold": 500 }, 
 					"id" : 23

@@ -34,7 +34,7 @@
 
 				"rmg" : {
 
-					"value"		: 2500,
+					"value"		: 7000,
 
 					"rarity"	: 100
 				},
@@ -50,11 +50,12 @@
 						],
 						"combat_value": 50,
 						"reward" : {
-							"value": 2000,
+							"value": 7000,
 							"resources":
 							{
-								"gold" : 2000
-							}
+								"gold" : 10000
+							},
+							"artifacts": [ { "class" : "MINOR" },  { "class" : "MAJOR" }]
 						}
 					},
 					{
@@ -68,11 +69,12 @@
 						],
 						"combat_value": 100,
 						"reward" : {
-							"value": 3000,
+							"value": 12000,
 							"resources":
 							{
-								"gold" : 3000
-							}
+								"gold" : 15000
+							},
+							"artifacts": [ { "class" : "MAJOR" },  { "class" : "RELIC" }]
 						}
 					},
 					{
@@ -86,12 +88,12 @@
 						],
 						"combat_value": 150,
 						"reward" : {
-							"value": 5000,
+							"value": 30000,
 							"resources":
 							{
-								"gold" : 4000
+								"gold" : 20000
 							},
-							"artifacts": [ { "class" : "TREASURE" } ]
+							"artifacts": [ { "class" : "MAJOR" }, { "class" : "MAJOR" },  { "class" : "RELIC" }]
 						}
 					},
 					{
@@ -105,12 +107,12 @@
 						],
 						"combat_value": 200,
 						"reward" : {
-							"value": 7000,
+							"value": 50000,
 							"resources":
 							{
-								"gold" : 5000
+								"gold" : 25000
 							},
-							"artifacts": [ { "class" : "MINOR" } ]
+							"artifacts": [ { "class" : "MAJOR" }, { "class" : "RELIC" },  { "class" : "RELIC" }]
 						}
 					}
 				]

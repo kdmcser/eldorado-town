@@ -28,7 +28,7 @@
 				}
 			},
 
-			"musicTheme" : "music/factions/goldtown",
+			"musicTheme" : ["music/factions/goldtown"],
 			"defaultTavern" : 5,
 			"tavern" :
 			{
@@ -152,7 +152,6 @@
 				}
                         },
 			"mageGuild" : 4,
-			"warMachine" : "goldcannon",
 			"moatAbility" : "eldoradoMoat",
 			"names" : [
 				"Jerusalem",

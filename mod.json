@@ -2,7 +2,7 @@
 	"name" : "Eldorado",
 	"description" : "Eldorado Town",
 	"author": "Planetavril and kdmcser",
-	"version" : "0.5",
+	"version" : "0.6",
 	"contact": "",
 	"modType" : "Town",
 	"changelog" :
@@ -11,7 +11,8 @@
 		"0.2" : ["Update for vcmi-1.4"],
 		"0.3" : ["Rebalanced"],
 		"0.4" : ["Graphics fix"],
-		"0.5" : ["Special building fix, change some creatures ability"]
+		"0.5" : ["Special building fix, change some creatures ability"],
+		"0.6" : ["Update for vcmi-1.6"]
     },
 	"chinese" : {
 		"name" : "黄金城",
